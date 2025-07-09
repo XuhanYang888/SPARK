@@ -1,5 +1,19 @@
 console.log("Script loaded!");
 
+// smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
+
 // scroll effect for header
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
