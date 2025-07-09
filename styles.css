@@ -344,7 +344,7 @@ footer {
 /* contact-form */
 .contact-form {
   background: white;
-  padding: 80px 0;
+  padding: 180px 0 80px;
 }
 
 .contact-header {
@@ -408,4 +408,28 @@ footer {
   .full-width {
     grid-column: span 1;
   }
+}
+
+/* toast */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #28a745;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
