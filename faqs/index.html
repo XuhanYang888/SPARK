@@ -3,67 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#667eea" />
     <title>SPARK - FAQs</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Oval&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav class="container">
-        <a href="../home/" class="logo">SPARK</a>
-        <ul class="nav-links">
-          <li><a href="../about_us/">About Us</a></li>
-          <li><a href="../start_a_branch/">Start A Branch</a></li>
-          <li><a href="../faqs/" class="active">FAQs</a></li>
-          <li><a href="../contact_us/">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Empowering Youth to Revolutionize STEM Education</h1>
+        <h1>Frequently Asked Questions</h1>
         <p>
-          Forget the rote memorization - SPARK uses specially developed
-          curriculum based around engaging, hands-on experiments to make science
-          accessible and fun for all students.
+          We are here to help! Below are some of the most common questions we
+          receive, along with detailed answers.
         </p>
-        <a href="#programs" class="cta-button">Discover Our Programs</a>
+        <a href="../contact_us/" class="cta-button">
+          Contact Us
+          <i data-feather="arrow-up-right" style="vertical-align: sub"></i>
+        </a>
       </div>
     </section>
-    
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: info@spark.org</p>
-            <p>Want to start a SPARK branch?</p>
-            <p>Have questions? Drop us a line!</p>
-          </div>
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <a href="#">About Us</a>
-            <a href="#">Programs</a>
-            <a href="#">Regions</a>
-            <a href="#">FAQs</a>
-            <a href="#">Our Team</a>
-          </div>
-          <div class="footer-section">
-            <h3>Get Involved</h3>
-            <a href="#">Volunteer</a>
-            <a href="#">Donate</a>
-            <a href="#">Partner with Us</a>
-            <a href="#">Start a Branch</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 SPARK. All rights reserved.</p>
+
+    <!-- General FAQs Section -->
+    <section class="general-faqs">
+      <div class="container" style="max-width: 800px">
+        <h2>General Questions</h2>
+        <div class="faq-list">
+          <details>
+            <summary>What is SPARK?</summary>
+            <div>
+              SPARK is a youth-led initiative that makes science fun and
+              accessible for kids through hands-on activities, mentorship, and
+              free or low-cost resources.
+            </div>
+          </details>
+          <details>
+            <summary>Who can join SPARK programs?</summary>
+            <div>
+              Our programs are designed for elementary and middle school
+              students, but anyone interested in science is welcome to
+              participate!
+            </div>
+          </details>
+          <details>
+            <summary>How much does it cost?</summary>
+            <div>
+              Most of our resources and activities are free or low-cost, thanks
+              to our volunteers and supporters.
+            </div>
+          </details>
+          <details>
+            <summary>How can I volunteer?</summary>
+            <div>
+              High school and college students can volunteer as mentors or help
+              organize events. Visit our
+              <a href="../contact_us/">Contact Us</a>
+              page to get started!
+            </div>
+          </details>
+          <details>
+            <summary>How do I start a SPARK branch?</summary>
+            <div>
+              We love expanding! Check out our "Start a Branch" info or reach
+              out via the Contact page for guidance and resources.
+            </div>
+          </details>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
     <script src="../script.js"></script>
+    <script>
+      feather.replace();
+      fetch("../components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+          feather.replace();
+        });
+      fetch("../components/header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+          feather.replace();
+        });
+    </script>
   </body>
 </html>

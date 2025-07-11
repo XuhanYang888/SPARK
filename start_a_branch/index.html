@@ -3,67 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#667eea" />
     <title>SPARK - Start A Branch</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Oval&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav class="container">
-        <a href="../home/" class="logo">SPARK</a>
-        <ul class="nav-links">
-          <li><a href="../about_us/">About Us</a></li>
-          <li><a href="../start_a_branch/" class="active">Start A Branch</a></li>
-          <li><a href="../faqs/">FAQs</a></li>
-          <li><a href="../contact_us/">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Empowering Youth to Revolutionize STEM Education</h1>
+        <h1>Start a Branch</h1>
         <p>
-          Forget the rote memorization - SPARK uses specially developed
-          curriculum based around engaging, hands-on experiments to make science
-          accessible and fun for all students.
+          By starting a SPARK branch at your school, you can bring exciting
+          science experiences to younger students in your community.
         </p>
-        <a href="#programs" class="cta-button">Discover Our Programs</a>
+        <a href="#form" class="cta-button">Apply Now!</a>
       </div>
     </section>
-    
-    <!-- Footer -->
-    <footer>
+
+    <!-- branch benefits -->
+    <section class="branch-benefits">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: info@spark.org</p>
-            <p>Want to start a SPARK branch?</p>
-            <p>Have questions? Drop us a line!</p>
+        <h2>As a SPARK Branch, You Get:</h2>
+        <div class="benefits-columns">
+          <div class="benefits-column">
+            <h3>Tools and Resources</h3>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Starter Package</h4>
+              <p class="benefit-desc">
+                Includes branding materials, outreach templates, event
+                checklists, and planning guides to help you launch successfully.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Ready-to-Use Lesson Plans</h4>
+              <p class="benefit-desc">
+                Fully developed, age-appropriate lessons and hands-on science
+                activities designed by experienced volunteers.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Monthly Resource Center Access</h4>
+              <p class="benefit-desc">
+                Ongoing updates with new lesson plans, outreach ideas,
+                advertising templates, and experiments every month.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Sponsored Donations</h4>
+              <p class="benefit-desc">
+                Eligible branches may receive donated science kits, experiment
+                materials, or funding to support their events.
+              </p>
+            </div>
           </div>
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <a href="#">About Us</a>
-            <a href="#">Programs</a>
-            <a href="#">Regions</a>
-            <a href="#">FAQs</a>
-            <a href="#">Our Team</a>
+          <div class="benefits-column">
+            <h3>Growth, Support &amp; Recognition</h3>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Join the SPARK Community</h4>
+              <p class="benefit-desc">
+                Be part of a passionate, North America-wide network of student
+                leaders and mentors.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Make Meaningful Connections</h4>
+              <p class="benefit-desc">
+                Collaborate with other branches, local schools, and
+                organizations to broaden your impact.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Mentorship from Successful Branches</h4>
+              <p class="benefit-desc">
+                Learn from experienced leaders who will guide and support you
+                along the way.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Leadership Skill Building</h4>
+              <p class="benefit-desc">
+                Gain valuable experience in team management, youth mentorship,
+                public speaking, and program planning.
+              </p>
+            </div>
+            <div class="benefit-item">
+              <h4 class="benefit-title">Official Recommendation Letter</h4>
+              <p class="benefit-desc">
+                Earn a letter of recommendation from SPARK's Executive Team to
+                support academic, scholarship, or job applications.
+              </p>
+            </div>
           </div>
-          <div class="footer-section">
-            <h3>Get Involved</h3>
-            <a href="#">Volunteer</a>
-            <a href="#">Donate</a>
-            <a href="#">Partner with Us</a>
-            <a href="#">Start a Branch</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 SPARK. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="requirements">
+      <div class="container">
+        <h2>Requirements</h2>
+        <div class="requirements-grid">
+          <div class="requirement-card">
+            <h3 class="requirement-title">Enrolled in a NA High School</h3>
+            <p class="requirement-desc">
+              You’re a current high school student in the U.S. or Canada, and
+              your high school doesn’t currently have a SPARK branch.
+            </p>
+          </div>
+          <div class="requirement-card">
+            <h3 class="requirement-title">A Confident Leader</h3>
+            <p class="requirement-desc">
+              You can build and manage a small team, organize events, and take
+              initiative to grow your branch.
+            </p>
+          </div>
+          <div class="requirement-card">
+            <h3 class="requirement-title">Great with Kids</h3>
+            <p class="requirement-desc">
+              You enjoy working with younger students and can communicate ideas
+              clearly, patiently, and enthusiastically.
+            </p>
+          </div>
+          <div class="requirement-card">
+            <h3 class="requirement-title">Hands-On & Creative</h3>
+            <p class="requirement-desc">
+              You’re ready to teach basic science concepts through engaging
+              lessons and hands-on experiments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply-section" id="form">
+      <div class="container">
+        <h2>Apply Now!</h2>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeTWJ18AiNlfOa2eCefsVZgyxnnXAmia6KVHswUjmljkOZ0dQ/viewform?embedded=true"
+          width="100%"
+          height="400px"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
     <script src="../script.js"></script>
+    <script>
+      feather.replace();
+      fetch("../components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+          feather.replace();
+        });
+      fetch("../components/header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+          feather.replace();
+        });
+    </script>
   </body>
 </html>

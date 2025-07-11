@@ -3,33 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#667eea">
     <title>SPARK - Home</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Oval&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav class="container">
-        <a href="../home/" class="logo">SPARK</a>
-        <ul class="nav-links">
-          <li><a href="../about_us/">About Us</a></li>
-          <li><a href="../start_a_branch/">Start A Branch</a></li>
-          <li><a href="../faqs/">FAQs</a></li>
-          <li><a href="../contact_us/">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Empowering Youth to Revolutionize STEM Education</h1>
+        <img
+          src="../assets/logo.svg"
+          alt="SPARK Logo"
+          class="hero-logo"
+          style="max-width: 160px; margin-bottom: 1.5rem"
+        />
+        <h1>Science Projects and Research for Kids</h1>
         <p>
-          Forget the rote memorization - SPARK uses specially developed
-          curriculum based around engaging, hands-on experiments to make science
-          accessible and fun for all students.
+          SPARK was created to make science more exciting and accessible for
+          younger students – especially those who may not have science clubs,
+          STEM programs, or extra support at school.
         </p>
-        <a href="#programs" class="cta-button">Discover Our Programs</a>
+        <a href="#programs" class="cta-button">
+          Discover Our Programs
+          <i data-feather="arrow-down" style="vertical-align: sub;"></i>
+        </a>
       </div>
     </section>
 
@@ -39,50 +46,79 @@
         <h2>What We Do</h2>
         <div class="what-we-do-grid">
           <div class="what-we-do-card">
-            <h3>Hands-On Science</h3>
+            <h3>Learn by Doing</h3>
             <p>
-              We design and deliver interactive experiments that spark curiosity
-              and make science fun and accessible for all students.
+              We help younger kids learn science by doing, not just reading.
+              Through experiments, projects, and creative challenges, we make
+              science feel like play, while building real knowledge.
             </p>
           </div>
           <div class="what-we-do-card">
-            <h3>Youth Leadership</h3>
+            <h3>Close-mentorship</h3>
             <p>
-              Our programs are led by passionate youth volunteers, empowering
-              the next generation of STEM leaders and educators.
+              Our programs are led by high school students who understand how
+              young minds learn. With near-peer mentorship, kids feel supported,
+              understood, and inspired by role models who were just like them.
             </p>
           </div>
           <div class="what-we-do-card">
-            <h3>Community Outreach</h3>
+            <h3>Accessibility</h3>
             <p>
-              We partner with schools and organizations to bring quality STEM
-              education to underserved communities across North America.
+              We design and distribute free or low-cost science kits, activity
+              guides, and explainer videos, so every child—regardless of
+              background—can explore and enjoy science at home or at school.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Stats -->
+    <!-- disabled before info -->
+    <!-- Stats
     <section class="stats">
       <div class="container">
         <h2>Our Impact</h2>
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-number">15+</div>
+            <div class="stat-number">NaN</div>
             <div class="stat-label">States/Provinces Across NA</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">14</div>
+            <div class="stat-number">NaN</div>
             <div class="stat-label">Years of Service</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">500+</div>
+            <div class="stat-number">NaN</div>
             <div class="stat-label">Students Taught Weekly</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">200+</div>
+            <div class="stat-number">NaN</div>
             <div class="stat-label">Youth Volunteers</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="why-spark">
+      <div class="container">
+        <h2>Why Spark?</h2>
+        <div class="why-spark-grid">
+          <div class="why-spark-image">
+            <img src="../assets/temp1.svg" alt="temp img" />
+          </div>
+          <div class="why-spark-card">
+            <h3>Curiosity Ignites Discovery</h3>
+            <p>
+              Every scientist begins with a spark of curiosity about how the
+              world works.
+            </p>
+          </div>
+          <div class="why-spark-card">
+            <h3>From Spark to Flame</h3>
+            <p>
+              We create programs that turn a spark of interest into a lifelong
+              passion.
+            </p>
           </div>
         </div>
       </div>
@@ -94,27 +130,28 @@
         <h2>Our Programs</h2>
         <div class="programs-grid">
           <div class="program-card">
-            <h3>SPARK Education</h3>
+            <h3>SPARK Program-1</h3>
             <p>
-              Our core program delivering hands-on science education to
-              elementary schools through engaging experiments and creative
-              learning.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <a href="#" class="program-button">Learn More</a>
           </div>
           <div class="program-card">
-            <h3>SPARK Expansion</h3>
+            <h3>SPARK Program-2</h3>
             <p>
-              Our initiative to start a SPARK branch in every state, bringing
-              quality science education to underserved communities nationwide.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. In voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <a href="#" class="program-button">Join Us</a>
           </div>
           <div class="program-card">
-            <h3>SPARK Media</h3>
+            <h3>SPARK Program-3</h3>
             <p>
-              Creating online content that emphasizes the importance of our
-              mission and showcases the impact of youth-led science education.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit.
             </p>
             <a href="#" class="program-button">Explore</a>
           </div>
@@ -123,36 +160,23 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: info@spark.org</p>
-            <p>Want to start a SPARK branch?</p>
-            <p>Have questions? Drop us a line!</p>
-          </div>
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <a href="#">About Us</a>
-            <a href="#">Programs</a>
-            <a href="#">Regions</a>
-            <a href="#">FAQs</a>
-            <a href="#">Our Team</a>
-          </div>
-          <div class="footer-section">
-            <h3>Get Involved</h3>
-            <a href="#">Volunteer</a>
-            <a href="#">Donate</a>
-            <a href="#">Partner with Us</a>
-            <a href="#">Start a Branch</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 SPARK. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+
     <script src="../script.js"></script>
+    <script>
+      feather.replace();
+      fetch("../components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+          feather.replace();
+        });
+      fetch("../components/header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+          feather.replace();
+        });
+    </script>
   </body>
 </html>

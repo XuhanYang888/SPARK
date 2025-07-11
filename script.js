@@ -1,14 +1,18 @@
 console.log("Script loaded!");
 
-// smooth scroll
+// smooth scroll with header offset
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      target.scrollIntoView({
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.offsetHeight : 0;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      window.scrollTo({
+        top: targetPosition,
         behavior: "smooth",
-        block: "start",
       });
     }
   });
@@ -62,6 +66,64 @@ const statsSection = document.querySelector(".stats");
 if (statsSection) {
   observer.observe(statsSection);
 }
+
+// Animate <details> open/close in .faq-list
+document.querySelectorAll(".faq-list details").forEach((detail) => {
+  const content = detail.querySelector("div");
+  if (!content) return;
+
+  // Set initial styles
+  content.style.overflow = "hidden";
+  content.style.height = detail.open ? content.scrollHeight + "px" : "0px";
+
+  let closing = false;
+  let opening = false;
+
+  detail.addEventListener("toggle", function () {
+    if (detail.open && !opening) {
+      opening = true;
+      content.style.display = "block";
+      content.style.transition = "height 0.3s cubic-bezier(.4,0,.2,1)";
+      content.style.height = "0px";
+      void content.offsetWidth; // force reflow
+      content.style.height = content.scrollHeight + "px";
+      setTimeout(() => {
+        content.style.height = "";
+        opening = false;
+      }, 300);
+    } else if (!detail.open && !closing) {
+      closing = true;
+      content.style.transition = "height 0.3s cubic-bezier(.4,0,.2,1)";
+      content.style.height = content.scrollHeight + "px";
+      void content.offsetWidth; // force reflow
+      content.style.height = "0px";
+      setTimeout(() => {
+        content.style.display = "";
+        closing = false;
+      }, 300);
+    }
+  });
+
+  // Prevent instant close, animate instead
+  detail.addEventListener(
+    "click",
+    function (e) {
+      if (detail.open) {
+        e.preventDefault();
+        closing = true;
+        content.style.transition = "height 0.3s cubic-bezier(.4,0,.2,1)";
+        content.style.height = content.scrollHeight + "px";
+        void content.offsetWidth;
+        content.style.height = "0px";
+        setTimeout(() => {
+          detail.open = false;
+          closing = false;
+        }, 300);
+      }
+    },
+    true
+  );
+});
 
 // contact form submission
 const form = document.getElementById("form");
