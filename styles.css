@@ -6,13 +6,14 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #333;
 }
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f8f9fa;
+  background-color: #333;
 }
 
 .container {
@@ -23,9 +24,11 @@ body {
 
 /* header */
 header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
+  backdrop-filter: blur(10px);
   color: white;
   padding: 1rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -40,6 +43,9 @@ nav {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: "Nova Oval", system-ui, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -51,11 +57,11 @@ nav {
   height: 3rem;
   width: auto;
   max-width: 160px;
-  vertical-align: middle;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 2rem;
 }
@@ -77,7 +83,7 @@ nav {
 
 /* hero */
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
   color: white;
   padding: 120px 0 80px;
   text-align: center;
@@ -139,7 +145,7 @@ nav {
 }
 
 .what-we-do-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
   color: white;
   padding: 2rem;
   border-radius: 15px;
@@ -195,7 +201,7 @@ nav {
 .stat-number {
   font-size: 3rem;
   font-weight: bold;
-  color: #667eea;
+  color: #3a4784;
   margin-bottom: 0.5rem;
 }
 
@@ -224,7 +230,7 @@ nav {
 }
 
 .program-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
   color: white;
   padding: 2rem;
   border-radius: 15px;
@@ -322,7 +328,7 @@ nav {
 .why-spark-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #667eea;
+  color: #3a4784;
 }
 
 .why-spark-card p {
@@ -515,7 +521,7 @@ nav {
 }
 
 .benefits-column h3 {
-  color: #667eea;
+  color: #3a4784;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -528,7 +534,7 @@ nav {
 
 .benefit-title {
   font-size: 1.1rem;
-  color: #764ba2;
+  color: #181e46;
   margin-bottom: 0.3rem;
   font-weight: 600;
 }
@@ -571,7 +577,7 @@ nav {
 }
 
 .requirement-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.08);
   padding: 2rem;
@@ -669,7 +675,7 @@ nav {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #3a4784;
 }
 
 .full-width {
@@ -744,7 +750,7 @@ nav {
 .faq-list summary {
   font-weight: 600;
   font-size: 1.15rem;
-  color: #667eea;
+  color: #3a4784;
   cursor: pointer;
   outline: none;
   transition: color 0.2s;
@@ -756,7 +762,7 @@ nav {
 }
 
 .faq-list details[open] summary {
-  color: #764ba2;
+  color: #181e46;
 }
 
 .faq-list details > div {
@@ -764,12 +770,10 @@ nav {
   margin-top: 0.8rem;
   font-size: 1rem;
   line-height: 1.6;
-  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
 }
 
 .faq-list a {
-  color: #764ba2;
+  color: #181e46;
   text-decoration: underline;
   transition: color 0.2s;
 }
@@ -863,5 +867,58 @@ footer {
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile menu styles */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  z-index: 1101;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  background: white;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.12);
+  border-radius: 12px;
+  min-width: 180px;
+  padding: 1rem 0.5rem;
+  z-index: 1100;
+}
+
+.mobile-menu a {
+  color: #3a4784;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mobile-menu a:hover {
+  background: #fecd48;
+  color: #333;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
   }
 }

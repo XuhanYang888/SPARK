@@ -22,12 +22,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   if (window.scrollY > 100) {
-    header.style.background = "rgba(102, 126, 234, 0.95)";
-    header.style.backdropFilter = "blur(10px)";
+    header.style.background =
+      "linear-gradient(135deg, rgba(58, 71, 132, 0.85) 0%, rgba(24, 30, 70, 0.85) 100%)";
   } else {
     header.style.background =
-      "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
-    header.style.backdropFilter = "none";
+      "linear-gradient(135deg, #3A4784 0%, #181e46 100%)";
   }
 });
 
@@ -66,64 +65,6 @@ const statsSection = document.querySelector(".stats");
 if (statsSection) {
   observer.observe(statsSection);
 }
-
-// Animate <details> open/close in .faq-list
-document.querySelectorAll(".faq-list details").forEach((detail) => {
-  const content = detail.querySelector("div");
-  if (!content) return;
-
-  // Set initial styles
-  content.style.overflow = "hidden";
-  content.style.height = detail.open ? content.scrollHeight + "px" : "0px";
-
-  let closing = false;
-  let opening = false;
-
-  detail.addEventListener("toggle", function () {
-    if (detail.open && !opening) {
-      opening = true;
-      content.style.display = "block";
-      content.style.transition = "height 0.3s cubic-bezier(.4,0,.2,1)";
-      content.style.height = "0px";
-      void content.offsetWidth; // force reflow
-      content.style.height = content.scrollHeight + "px";
-      setTimeout(() => {
-        content.style.height = "";
-        opening = false;
-      }, 300);
-    } else if (!detail.open && !closing) {
-      closing = true;
-      content.style.transition = "height 0.3s cubic-bezier(.4,0,.2,1)";
-      content.style.height = content.scrollHeight + "px";
-      void content.offsetWidth; // force reflow
-      content.style.height = "0px";
-      setTimeout(() => {
-        content.style.display = "";
-        closing = false;
-      }, 300);
-    }
-  });
-
-  // Prevent instant close, animate instead
-  detail.addEventListener(
-    "click",
-    function (e) {
-      if (detail.open) {
-        e.preventDefault();
-        closing = true;
-        content.style.transition = "height 0.3s cubic-bezier(.4,0,.2,1)";
-        content.style.height = content.scrollHeight + "px";
-        void content.offsetWidth;
-        content.style.height = "0px";
-        setTimeout(() => {
-          detail.open = false;
-          closing = false;
-        }, 300);
-      }
-    },
-    true
-  );
-});
 
 // contact form submission
 const form = document.getElementById("form");
@@ -169,4 +110,24 @@ function showToast(message) {
   setTimeout(() => {
     toast.classList.remove("show");
   }, 4000);
+}
+
+function setupMobileMenu() {
+  const menuBtn = document.querySelector(".menu-btn");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  if (!menuBtn || !mobileMenu) return;
+
+  const newMenuBtn = menuBtn.cloneNode(true);
+  menuBtn.parentNode.replaceChild(newMenuBtn, menuBtn);
+
+  newMenuBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!mobileMenu.contains(e.target) && !newMenuBtn.contains(e.target)) {
+      mobileMenu.classList.remove("show");
+    }
+  });
 }
