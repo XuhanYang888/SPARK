@@ -26,27 +26,30 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <img
-          src="../assets/logo.svg"
-          alt="SPARK Logo"
-          class="hero-logo"
-          style="max-width: 160px; margin-bottom: 1.5rem"
-        />
-        <h1>Science Projects and Research for Kids</h1>
-        <p>
-          SPARK was created to make science more exciting and accessible for
-          younger students - especially those who may not have science clubs,
-          STEM programs, or extra support at school.
-        </p>
-        <a href="#what-we-do" class="cta-button">
-          Discover 
-          <i data-feather="arrow-down" style="vertical-align: sub"></i>
-        </a>
+        <div class="hero-content">
+          <img src="../assets/logo.svg" alt="SPARK Logo" class="hero-logo" />
+          <h1>Science Projects and Research for Kids</h1>
+          <p>
+            SPARK was created to make science more exciting and accessible for
+            younger students - especially those who may not have science clubs,
+            STEM programs, or extra support at school.
+          </p>
+          <a href="#what-we-do" class="cta-button">
+            Discover
+            <i data-feather="arrow-down" style="vertical-align: sub"></i>
+          </a>
+        </div>
+
+        <div class="hero-image-grid">
+          <div class="image-grid" id="imageGrid">
+            <!-- 21 grid items (3×7) will be populated by JavaScript -->
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- What We Do -->
-    <section class="what-we-do" id = "what-we-do">
+    <section class="what-we-do" id="what-we-do">
       <div class="container">
         <h2>What We Do</h2>
         <div class="what-we-do-grid">
@@ -186,6 +189,9 @@
           feather.replace();
           if (typeof setupMobileMenu === "function") setupMobileMenu();
         });
+
+      // Load images when page loads
+      document.addEventListener("DOMContentLoaded", loadImageGrid);
     </script>
   </body>
 </html>

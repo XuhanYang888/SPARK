@@ -26,12 +26,20 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Start a Branch</h1>
-        <p>
-          By starting a SPARK branch at your school, you can bring exciting
-          science experiences to younger students in your community.
-        </p>
-        <a href="#form" class="cta-button">Apply Now!</a>
+        <div class="hero-content">
+          <h1>Start a Branch</h1>
+          <p>
+            By starting a SPARK branch at your school, you can bring exciting
+            science experiences to younger students in your community.
+          </p>
+          <a href="#form" class="cta-button">Apply Now!</a>
+        </div>
+
+        <div class="hero-image-grid">
+          <div class="image-grid" id="imageGrid">
+            <!-- 21 grid items (3×7) will be populated by JavaScript -->
+          </div>
+        </div>
       </div>
     </section>
 
@@ -182,6 +190,9 @@
           feather.replace();
           if (typeof setupMobileMenu === "function") setupMobileMenu();
         });
+
+      // Load images when page loads
+      document.addEventListener("DOMContentLoaded", loadImageGrid);
     </script>
   </body>
 </html>

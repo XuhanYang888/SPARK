@@ -26,15 +26,23 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Frequently Asked Questions</h1>
-        <p>
-          We are here to help! Below are some of the most common questions we
-          receive, along with detailed answers.
-        </p>
-        <a href="../contact_us/" class="cta-button">
-          Contact Us
-          <i data-feather="arrow-up-right" style="vertical-align: sub"></i>
-        </a>
+        <div class="hero-content">
+          <h1>Frequently Asked Questions</h1>
+          <p>
+            We are here to help! Below are some of the most common questions we
+            receive, along with detailed answers.
+          </p>
+          <a href="../contact_us/" class="cta-button">
+            Contact Us
+            <i data-feather="arrow-up-right" style="vertical-align: sub"></i>
+          </a>
+        </div>
+
+        <div class="hero-image-grid">
+          <div class="image-grid" id="imageGrid">
+            <!-- 21 grid items (3×7) will be populated by JavaScript -->
+          </div>
+        </div>
       </div>
     </section>
 
@@ -104,6 +112,9 @@
           feather.replace();
           if (typeof setupMobileMenu === "function") setupMobileMenu();
         });
+        
+      // Load images when page loads
+      document.addEventListener("DOMContentLoaded", loadImageGrid);
     </script>
   </body>
 </html>
