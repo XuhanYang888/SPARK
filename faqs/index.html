@@ -10,7 +10,8 @@
     />
     <title>SPARK - FAQs</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.svg" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../components/css/global.css" />
+    <link rel="stylesheet" href="../components/css/faq.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,7 +110,8 @@
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
-    <script src="../script.js"></script>
+    <script src="../components/js/global.js"></script>
+    <script src="../components/js/image_grid.js"></script>
     <script>
       feather.replace();
       fetch("../components/footer.html")
@@ -125,7 +127,7 @@
           feather.replace();
           if (typeof setupMobileMenu === "function") setupMobileMenu();
         });
-        
+
       // Load images when page loads
       document.addEventListener("DOMContentLoaded", loadImageGrid);
     </script>

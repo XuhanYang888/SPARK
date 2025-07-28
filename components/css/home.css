@@ -1,0 +1,223 @@
+/* What We Do section */
+.what-we-do {
+  padding: 80px 0;
+  background: white;
+}
+
+.what-we-do h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.what-we-do-card {
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.what-we-do-card:hover {
+  transform: translateY(-5px);
+}
+
+.what-we-do-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.what-we-do-card p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+}
+
+/* stats */
+.stats {
+  background: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3a4784;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* programs */
+.programs {
+  padding: 80px 0;
+  background: white;
+}
+
+.programs h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.program-card {
+  background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.program-card p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.program-button {
+  background: #fecd48;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.program-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Why Spark section */
+.why-spark {
+  background: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.why-spark h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.why-spark-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.why-spark-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.why-spark-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 260px;
+  border-radius: 15px;
+}
+
+.why-spark-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.why-spark-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-spark-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3a4784;
+}
+
+.why-spark-card p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive for Why Spark */
+@media (max-width: 900px) {
+  .why-spark-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .why-spark-image {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,140 @@
+.who-we-are {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.who-we-are-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.who-we-are-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.who-we-are-content p {
+  margin-bottom: 1.5rem;
+}
+
+.who-we-are-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mission Section */
+.mission {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.mission-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.mission-content-text {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.mission-content-text p {
+  margin-bottom: 1.5rem;
+}
+
+.mission-content-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* team */
+.team {
+  padding: 80px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.team-card {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.12);
+  background: white;
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.team-photo {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.team-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(102, 126, 234, 1),
+    rgba(102, 126, 234, 0.6)
+  );
+  color: #fff;
+  padding: 1.3rem 1rem 1rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 -2px 12px rgba(102, 126, 234, 0.08);
+}
+
+.team-info h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.team-info p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* Responsive for team section */
+@media (max-width: 900px) {
+  .team-photo {
+    height: 260px;
+  }
+}
+@media (max-width: 600px) {
+  .team-photo {
+    height: 180px;
+  }
+}

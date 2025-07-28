@@ -1,0 +1,79 @@
+/* --- General FAQs Section --- */
+.general-faqs {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.general-faqs h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  background: #f8f9fa;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.07);
+  padding: 1.2rem 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.faq-list details[open] {
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.13);
+}
+
+.faq-list summary {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #3a4784;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list details[open] summary {
+  color: #181e46;
+}
+
+.faq-list details > div {
+  color: #444;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.faq-list a {
+  color: #181e46;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.faq-list a:hover {
+  color: #fecd48;
+}
+
+/* Responsive for FAQ section */
+@media (max-width: 600px) {
+  .faq-list details {
+    padding: 1rem 0.8rem;
+  }
+  .general-faqs {
+    padding: 40px 0;
+  }
+}
