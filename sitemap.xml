@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.spark4edu.org</loc>
-		<priority>1.00</priority>
-		<lastmod>2025-03-26</lastmod>
+		<lastmod>2025-07-20-T11:09:43-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/home</loc>
-		<priority>0.95</priority>
-		<lastmod>2025-07-10</lastmod>
+		<loc>https://www.spark4edu.org/home/</loc>
+		<lastmod>2025-07-28-T15:54:17-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/about_us</loc>
-		<priority>0.95</priority>
-		<lastmod>2025-07-13</lastmod>
+		<loc>https://www.spark4edu.org/start_a_branch/</loc>
+		<lastmod>2025-07-28-T15:54:34-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/start_a_branch</loc>
-		<priority>0.80</priority>
-		<lastmod>2025-07-14</lastmod>
+		<loc>https://www.spark4edu.org/contact_us/</loc>
+		<lastmod>2025-07-28-T16:01:16-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/faqs</loc>
-		<priority>0.70</priority>
-		<lastmod>2025-07-16</lastmod>
+		<loc>https://www.spark4edu.org/components/header</loc>
+		<lastmod>2025-07-20-T11:09:32-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/contact_us</loc>
-		<priority>0.70</priority>
-		<lastmod>2025-07-28</lastmod>
+		<loc>https://www.spark4edu.org/components/footer</loc>
+		<lastmod>2025-07-20-T09:43:38-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/components/header.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-03-26</lastmod>
+		<loc>https://www.spark4edu.org/faqs/</loc>
+		<lastmod>2025-07-28-T15:54:51-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.spark4edu.org/components/footer.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-03-26</lastmod>
+		<loc>https://www.spark4edu.org/about_us/</loc>
+		<lastmod>2025-07-28-T15:54:27-04:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 </urlset>
