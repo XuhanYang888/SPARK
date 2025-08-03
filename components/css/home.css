@@ -164,7 +164,6 @@
 
 .why-spark-image {
   grid-column: 1 / 2;
-  grid-row: 1 / 3;
   background: white;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -178,7 +177,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 260px;
   border-radius: 15px;
 }
 
@@ -234,14 +232,30 @@
   color: #333;
 }
 
+.get-involved h3 {
+  color: #333;
+}
+
 .get-involved-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: white;
-  color: #333;
+  color: #666;
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.get-involved-row-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  color: #666;
+  border-radius: 15px;
+  padding: 2rem 2rem 1rem 2rem;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -273,31 +287,10 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.program-button {
-  background: #fecd48;
-  color: #333;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.program-button:hover {
-  transform: translateY(-2px);
-}
-
-/* Responsive stacking */
-@media (max-width: 768px) {
-  .get-involved-row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .get-involved-row.reverse {
-    flex-direction: column;
+/* Desktop layout: first row text-image, second row image-text */
+@media (min-width: 769px) {
+  /* Second row: image on left, text on right */
+  .get-involved-row-reverse {
+    flex-direction: row-reverse;  
   }
 }

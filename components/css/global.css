@@ -184,7 +184,10 @@ footer {
   text-decoration: none;
   display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.cta-button.ani{
+  animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
 .cta-button:hover {
@@ -211,13 +214,13 @@ footer {
 .hero-logo {
   max-width: 160px;
   margin-bottom: 1.5rem;
-  animation: fadeInUp 1s ease-out;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  animation: fadeInUp 1s ease-out;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .hero p {
@@ -226,7 +229,7 @@ footer {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  animation: fadeInUp 1s ease-out 0.3s both;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
 }
 
 /* Image grid as background */
