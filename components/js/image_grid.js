@@ -1,7 +1,7 @@
 // Simple image grid loader with randomization
 function loadImageGrid() {
   const grid = document.getElementById('imageGrid');
-  const imageFolder = '../assets/images/';
+  const imageFolder = '../assets/event_images/';
   const totalImages = 21; // 3×7 grid
   
   // Create array of image numbers and shuffle it

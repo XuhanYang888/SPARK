@@ -23,7 +23,7 @@
 .faq-list details {
   background: #f8f9fa;
   border: 2px solid #eee;
-  border-radius: 12px;
+  border-radius: 30px;
   box-shadow: 0 2px 8px rgba(102, 126, 234, 0.07);
   padding: 1.2rem 1.5rem;
   transition: box-shadow 0.2s;

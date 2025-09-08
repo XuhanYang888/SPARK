@@ -45,7 +45,7 @@
 .form-group textarea {
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 1rem;
   font-family: inherit;
   transition: border-color 0.3s ease;
@@ -75,7 +75,7 @@
   background-color: #28a745;
   color: white;
   padding: 16px 24px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-weight: 500;
   opacity: 0;

@@ -22,7 +22,7 @@
   background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
   color: white;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 40px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -63,7 +63,7 @@
 .stat-card {
   background: white;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -107,7 +107,7 @@
   background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);
   color: white;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 40px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -166,7 +166,7 @@
 .why-spark-image {
   grid-column: 1 / 2;
   background: white;
-  border-radius: 15px;
+  border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -178,13 +178,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
 .why-spark-card {
   background: white;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -243,7 +243,7 @@
   justify-content: space-between;
   background: white;
   color: #666;
-  border-radius: 15px;
+  border-radius: 50px;
   padding: 1rem 2rem 2rem 2rem;
   gap: 2rem;
   flex-wrap: wrap;
@@ -255,7 +255,7 @@
   justify-content: space-between;
   background: white;
   color: #666;
-  border-radius: 15px;
+  border-radius: 50px;
   padding: 2rem 2rem 1rem 2rem;
   gap: 2rem;
   flex-wrap: wrap;
@@ -283,7 +283,7 @@
 .get-involved-img img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 50px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
