@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3a4784" />
+    <meta
+      name="description"
+      content="Learn everything you need to run a successful SPARK branch, including resources for mentors, students, and organizers."
+    />
+    <meta
+      name="keywords"
+      content="science, education, youth, school, experiments, SPARK"
+    />
+    <meta name="canonical" href="https://spark.org/branch_resources" />
+    <title>Science Projects and Research for Kids - Branch Resources</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg" />
+    <link rel="stylesheet" href="../components/css/global.css" />
+    <link rel="stylesheet" href="../components/css/branch.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Oval&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Branch Resources</h1>
+          <p>Everything you need to run a successful SPARK branch.</p>
+        </div>
+        <div class="hero-image-grid">
+          <div class="image-grid" id="imageGrid">
+            <!-- 21 grid items (3×7) will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section">
+      <div class="container">
+        <h2 class="handbook-title">SPARK Handbook</h2>
+
+        <div class="handbook-content">
+          <p>
+            View the guide below or
+            <a href="../assets/Handbook.pdf" target="_blank" rel="noopener"
+              >open in a new tab</a
+            >.
+          </p>
+        </div>
+
+        <iframe
+          class="pdf-viewer-frame"
+          src="../assets/Handbook.pdf"
+          title="SPARK Handbook"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="../components/js/global.js"></script>
+    <script src="../components/js/image_grid.js"></script>
+    <script src="../components/js/pdf_viewer.js"></script>
+    <script>
+      feather.replace();
+      fetch("../components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+          feather.replace();
+        });
+      fetch("../components/header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+          feather.replace();
+          if (typeof setupMobileMenu === "function") setupMobileMenu();
+        });
+
+      // Load images when page loads
+      document.addEventListener("DOMContentLoaded", loadImageGrid);
+    </script>
+  </body>
+</html>
