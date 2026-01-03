@@ -3,41 +3,46 @@
 	<url>
 		<loc>https://www.spark4edu.org</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/start_a_branch</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.spark4edu.org/branch_resources</loc>
+		<priority>1.00</priority>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/home</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/faqs</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/contact_us</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/about_us</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/components/header.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 	<url>
 		<loc>https://www.spark4edu.org/components/footer.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-02</lastmod>
+		<lastmod>2026-01-03</lastmod>
 	</url>
 </urlset>
