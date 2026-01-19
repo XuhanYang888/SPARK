@@ -22,6 +22,10 @@ body {
   padding: 0 20px;
 }
 
+h5 {
+  font-size: 1rem;
+}
+
 /* header */
 header {
   background: linear-gradient(135deg, #3a4784 0%, #181e46 100%);

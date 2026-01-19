@@ -1,0 +1,151 @@
+/* --- Competitions Section --- */
+.competitions {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.competitions h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.competitions h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #3a4784;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.comp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+}
+
+.comp-list details {
+  background: #f8f9fa;
+  border: 2px solid #eee;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.07);
+  padding: 1.5rem 1.75rem;
+  transition: box-shadow 0.2s;
+}
+
+.comp-list details[open] {
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.13);
+}
+
+.comp-list summary {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #3a4784;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+  list-style: none;
+}
+
+.comp-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.comp-list details[open] summary {
+  color: #181e46;
+}
+
+.comp-list details > div {
+  color: #444;
+  margin-top: 0.8rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.comp-list a {
+  color: #3a4784;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.comp-list a:hover {
+  text-decoration: underline;
+}
+
+/* PDF viewer */
+.pdf-viewer-frame {
+  width: 100%;
+  max-width: 1000px;
+  height: 1000px;
+  display: block;
+  margin: 1.5rem auto;
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.08);
+}
+
+/* Competition Outline Content Styling */
+.division-info {
+  background: #f0f4ff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.division-info p {
+  color: #3a4784;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.rules-section {
+  margin: 1.5rem 0;
+}
+
+.rules-section h4 {
+  color: #3a4784;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.comp-list ul {
+  margin: 1rem 0;
+  padding-left: 3rem;
+  margin-right: 3rem;
+}
+
+.comp-list li {
+  margin-bottom: 0.8rem;
+}
+
+.judging-criteria {
+  margin: 1.5rem 0;
+}
+
+.judging-criteria h4 {
+  color: #3a4784;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive for competitions section */
+@media (max-width: 600px) {
+  .comp-list details {
+    padding: 1rem 0.8rem;
+  }
+  .competitions {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .pdf-viewer-frame {
+    height: 500px;
+  }
+}
