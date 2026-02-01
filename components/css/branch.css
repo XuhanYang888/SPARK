@@ -127,9 +127,21 @@
   margin: 0 auto;
 }
 
+/* Toggle Buttons */
+.toggle-section {
+  padding: 80px 0 50px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.toggle-section button {
+  margin: 0 10px;
+}
+
+/* budget form */
 .budget-section {
-  padding: 60px 0 80px 0;
-  background: #f8f9fa;
+  padding: 0 0 80px 0;
+  background: #fff;
 }
 
 .budget-section h2 {
@@ -145,7 +157,7 @@
 
 /* Handbook */
 .handbook-section {
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   background: #fff;
 }
 

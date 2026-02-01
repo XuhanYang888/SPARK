@@ -44,7 +44,14 @@
       </div>
     </section>
 
-    <section class="handbook-section">
+    <section class="toggle-section">
+      <div class="container">
+        <button id="show-handbook" class="cta-button">SPARK Handbook</button>
+        <button id="show-budget" class="cta-button">Budget Application</button>
+      </div>
+    </section>
+
+    <section class="handbook-section" style="display: none">
       <div class="container">
         <h2 class="handbook-title">SPARK Handbook</h2>
         <div class="handbook-content">
@@ -68,7 +75,7 @@
       </div>
     </section>
 
-    <section class="budget-section" id="form">
+    <section class="budget-section" id="form" style="display: none">
       <div class="container">
         <h2>Branch Financial Aid Application</h2>
         <iframe
@@ -88,6 +95,7 @@
     <script src="../components/js/global.js"></script>
     <script src="../components/js/image_grid.js"></script>
     <script src="../components/js/pdf_viewer.js"></script>
+    <script src="../components/js/branch_resources.js"></script>
     <script>
       feather.replace();
       fetch("../components/footer.html")
@@ -103,9 +111,6 @@
           feather.replace();
           if (typeof setupMobileMenu === "function") setupMobileMenu();
         });
-
-      // Load images when page loads
-      document.addEventListener("DOMContentLoaded", loadImageGrid);
     </script>
   </body>
 </html>
