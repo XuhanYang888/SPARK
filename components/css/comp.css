@@ -2,21 +2,14 @@
 .competitions {
   background: #fff;
   padding: 60px 0;
+  font-size: 1.1rem;
 }
 
 .competitions h2 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2.25rem;
   color: #333;
-  margin-bottom: 2.5rem;
-  font-weight: 700;
-}
-
-.competitions h3 {
-  text-align: center;
-  font-size: 2rem;
-  color: #3a4784;
-  margin-bottom: 2.5rem;
+  margin: 1.5rem 0;
   font-weight: 700;
 }
 
@@ -28,64 +21,95 @@
   margin: 0 auto 2rem auto;
 }
 
-.comp-list details {
-  background: #f8f9fa;
-  border: 2px solid #eee;
-  border-radius: 30px;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.07);
-  padding: 1.5rem 1.75rem;
-  transition: box-shadow 0.2s;
+.comp-list p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
-.comp-list details[open] {
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.13);
-}
-
-.comp-list summary {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #3a4784;
-  cursor: pointer;
-  outline: none;
-  transition: color 0.2s;
-  list-style: none;
-}
-
-.comp-list summary::-webkit-details-marker {
+/* hide all sections initially */
+.section-content {
   display: none;
 }
 
-.comp-list details[open] summary {
-  color: #181e46;
-}
-
-.comp-list details > div {
-  color: #444;
-  margin-top: 0.8rem;
-  font-size: 1.15rem;
-  line-height: 1.6;
-}
-
-.comp-list a {
+.competitions a {
   color: #3a4784;
   text-decoration: none;
   font-weight: 600;
 }
 
-.comp-list a:hover {
+.competitions a:hover {
   text-decoration: underline;
 }
 
 /* PDF viewer */
 .pdf-viewer-frame {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   height: 1000px;
   display: block;
   margin: 1.5rem auto;
   border: 0px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.08);
+}
+
+/* PDF Buttons */
+.pdf-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pdf-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.pdf-btn:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-btn.active {
+  background: #3a4784;
+  color: white;
+  border-color: #3a4784;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 71, 132, 0.3);
+}
+
+.pdf-btn i {
+  width: 18px;
+  height: 18px;
+}
+
+.pdf-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Competition Outline Content Styling */
@@ -121,6 +145,11 @@
 
 .comp-list li {
   margin-bottom: 0.8rem;
+}
+
+.awards-list {
+  font-weight: 600;
+  margin: 1rem 0 2rem 2rem;
 }
 
 .judging-criteria {
