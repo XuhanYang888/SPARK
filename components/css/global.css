@@ -99,7 +99,6 @@ nav {
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   background-color: #fff;
   min-width: 180px;
@@ -107,6 +106,13 @@ nav {
   z-index: 1001;
   border-radius: 8px;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(6px) scale(0.98);
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 180ms cubic-bezier(0.2, 0.9, 0.2, 1),
+    transform 200ms cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 .dropdown-content a {
@@ -115,14 +121,20 @@ nav {
   text-decoration: none;
   display: block;
   font-weight: 500;
+  transition: background-color 120ms ease;
 }
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
+  color: #333;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* Mobile menu styles */
@@ -206,10 +218,50 @@ footer {
   text-decoration: none;
   margin-bottom: 0.5rem;
   display: block;
+  transition: color 180ms ease;
 }
 
 .footer-section a:hover {
   color: #fecd48;
+}
+
+.footer-section .social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section .social-icons a {
+  display: inline-flex;
+  margin-bottom: 0;
+  color: #ccc;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    transform 120ms ease;
+  will-change: color, transform;
+}
+
+.footer-section .social-icons a[aria-label="Contact Us"]:hover,
+.footer-section .social-icons a[aria-label="Contact Us"]:focus-visible {
+  color: #fecd48;
+  transform: translateY(-1px) scale(1.06);
+}
+
+.footer-section .social-icons a[aria-label="Instagram"]:hover,
+.footer-section .social-icons a[aria-label="Instagram"]:focus-visible {
+  color: #e1306c;
+  transform: translateY(-1px) scale(1.06);
+}
+
+.footer-section .social-icons a[aria-label="LinkedIn"]:hover,
+.footer-section .social-icons a[aria-label="LinkedIn"]:focus-visible {
+  color: #0a66c2;
+  transform: translateY(-1px) scale(1.06);
+}
+.footer-section .social-icons a i {
+  vertical-align: sub;
 }
 
 .footer-bottom {
