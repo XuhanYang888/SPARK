@@ -327,7 +327,7 @@
               <input type="hidden" name="source" value="competitions-website" />
 
               <div class="form-group">
-                <label for="studentName">Name</label>
+                <label for="studentName">Name (Last, First)</label>
                 <input type="text" id="studentName" name="name" required />
               </div>
 
@@ -345,17 +345,20 @@
               </div>
 
               <div class="form-group">
-                <label for="studentEmail"
-                  >What is your email? (personal email)</label
-                >
+                <label for="studentEmail">What is your email? (Personal)</label>
                 <input type="email" id="studentEmail" name="email" required />
               </div>
 
               <div class="form-group full-width">
                 <label for="proposalPdf"
-                  >Please attach your research proposal as a PDF here (≤ 10
+                  >Please attach your research proposal as PDF here (≤ 10
                   MB)</label
                 >
+                <p>
+                  File name format:<br />
+                  LastName_grade_research<br />
+                  Eg. Li_10_research
+                </p>
                 <input
                   type="file"
                   id="proposalPdf"
@@ -382,7 +385,7 @@
                 Submit Proposal
               </button>
 
-              <p id="submission-status" class="submission-status"><br></p>
+              <p id="submission-status" class="submission-status"><br /></p>
             </form>
           </div>
         </div>
