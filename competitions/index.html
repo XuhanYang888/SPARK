@@ -287,7 +287,7 @@
                 Use the template below to structure your research proposal. You
                 may also
                 <a
-                  href="https://docs.google.com/document/d/1JOPZnqBpzwCvgyylKkyEiZDVzDFgmYvHi0YeAO1bXbI/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1JOPZnqBpz74348132-663d-4a5e-aa76-4710fa0c8fb5wCvgyylKkyEiZDVzDFgmYvHi0YeAO1bXbI/edit?usp=sharing"
                   target="_blank"
                   >view it as a Google Doc</a
                 >.
@@ -317,7 +317,73 @@
         <div class="comp-list section-content" id="section-submissions">
           <h2>Project Submissions</h2>
           <div>
-            <p>The submission portal isn't open yet.</p>
+            <!-- Embedded uploader (posts to your Google Apps Script endpoint) -->
+            <form id="submission-form" class="form-grid" novalidate>
+              <ol>
+                <li>Make a copy of our proposal template.</li>
+                <li>Fill in the required information.</li>
+                <li>Convert the file to PDF and submit below.</li>
+              </ol>
+              <input type="hidden" name="source" value="competitions-website" />
+
+              <div class="form-group">
+                <label for="studentName">Name</label>
+                <input type="text" id="studentName" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="grade">What grade are you currently in?</label>
+                <select id="grade" name="grade" required>
+                  <option value="">— select —</option>
+                  <option value="Grade 7 or below">Grade 7 or below</option>
+                  <option value="Grade 8">Grade 8</option>
+                  <option value="Grade 9">Grade 9</option>
+                  <option value="Grade 10">Grade 10</option>
+                  <option value="Grade 11">Grade 11</option>
+                  <option value="Grade 12">Grade 12</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="studentEmail"
+                  >What is your email? (personal email)</label
+                >
+                <input type="email" id="studentEmail" name="email" required />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="proposalPdf"
+                  >Please attach your research proposal as a PDF here (≤ 10
+                  MB)</label
+                >
+                <input
+                  type="file"
+                  id="proposalPdf"
+                  name="proposalPdf"
+                  accept="application/pdf"
+                  required
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="description"
+                  >A brief description of your research topic (1-3
+                  sentences)</label
+                >
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="cta-button full-width">
+                Submit Proposal
+              </button>
+
+              <p id="submission-status" class="submission-status"><br></p>
+            </form>
           </div>
         </div>
       </div>
