@@ -317,76 +317,17 @@
         <div class="comp-list section-content" id="section-submissions">
           <h2>Project Submissions</h2>
           <div>
-            <!-- Embedded uploader (posts to your Google Apps Script endpoint) -->
-            <form id="submission-form" class="form-grid" novalidate>
-              <ol>
-                <li>Make a copy of our proposal template.</li>
-                <li>Fill in the required information.</li>
-                <li>Convert the file to PDF and submit below.</li>
-              </ol>
-              <input type="hidden" name="source" value="competitions-website" />
-
-              <div class="form-group">
-                <label for="studentName">Name (Last, First)</label>
-                <input type="text" id="studentName" name="name" required />
-              </div>
-
-              <div class="form-group">
-                <label for="grade">What grade are you currently in?</label>
-                <select id="grade" name="grade" required>
-                  <option value="">— select —</option>
-                  <option value="Grade 7 or below">Grade 7 or below</option>
-                  <option value="Grade 8">Grade 8</option>
-                  <option value="Grade 9">Grade 9</option>
-                  <option value="Grade 10">Grade 10</option>
-                  <option value="Grade 11">Grade 11</option>
-                  <option value="Grade 12">Grade 12</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="studentEmail">What is your email? (Personal)</label>
-                <input type="email" id="studentEmail" name="email" required />
-              </div>
-
-              <div class="form-group full-width">
-                <label for="proposalPdf"
-                  >Please attach your research proposal as PDF here (≤ 10
-                  MB)</label
-                >
-                <p>
-                  File name format:<br />
-                  LastName_grade_research<br />
-                  Eg. Li_10_research
-                </p>
-                <input
-                  type="file"
-                  id="proposalPdf"
-                  name="proposalPdf"
-                  accept="application/pdf"
-                  required
-                />
-              </div>
-
-              <div class="form-group full-width">
-                <label for="description"
-                  >A brief description of your research topic (1-3
-                  sentences)</label
-                >
-                <textarea
-                  id="description"
-                  name="description"
-                  rows="3"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="cta-button full-width">
-                Submit Proposal
-              </button>
-
-              <p id="submission-status" class="submission-status"><br /></p>
-            </form>
+            <ol>
+              <li>Make a copy of our proposal template.</li>
+              <li>Fill in the required information.</li>
+              <li>Convert the file to PDF and submit below.</li>
+            </ol>
+            <p>
+              <a href="https://forms.gle/s3oDTqEwPnV2uwHWA" target="_blank">
+                Submit Your Research Proposal
+                <i data-feather="arrow-up-right" style="vertical-align: sub"></i>
+              </a>
+            </p>
           </div>
         </div>
       </div>
