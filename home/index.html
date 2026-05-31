@@ -30,7 +30,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <img src="../assets/logo.svg" alt="SPARK Logo" class="hero-logo" />
+          <img src="../assets/logo_tm.svg" alt="SPARK Logo" class="hero-logo" />
           <h1>Science Projects and Research for Kids</h1>
           <p>
             SPARK was created to make science more exciting and accessible for
@@ -124,8 +124,8 @@
       <div class="container">
         <h2>Why SPARK?</h2>
         <div class="why-spark-grid">
-          <div class="why-spark-image">
-            <img src="../assets/event_images/image22.png" alt="kids doing science" />
+          <div class="why-spark-image" id="whySparkImages">
+            <!-- Random images will be loaded here -->
           </div>
           <div class="why-spark-card">
             <h3>Curiosity Ignites Discovery</h3>
@@ -187,11 +187,8 @@
         <h2>Get Involved</h2>
 
         <div class="get-involved-row-reverse">
-          <div class="get-involved-img">
-            <img
-              src="../assets/event_images/image23.png"
-              alt="volunteers teaching kids"
-            />
+          <div class="get-involved-img" id="involvedImg1">
+            <!-- Random images will be loaded here -->
           </div>
           <div class="get-involved-text">
             <h3>Become a SPARK Branch Leader</h3>
@@ -207,11 +204,8 @@
         </div>
 
         <div class="get-involved-row">
-          <div class="get-involved-img">
-            <img
-              src="../assets/event_images/image24.png"
-              alt="volunteers teaching kids"
-            />
+          <div class="get-involved-img" id="involvedImg2">
+            <!-- Random images will be loaded here -->
           </div>
           <div class="get-involved-text">
             <h3>Support with a Donation</h3>
@@ -250,7 +244,11 @@
         });
 
       // Load images when page loads
-      document.addEventListener("DOMContentLoaded", loadImageGrid);
+      document.addEventListener("DOMContentLoaded", () => {
+        loadImageGrid();
+        loadWhySparkImages();
+        loadInvolvedImages();
+      });
     </script>
   </body>
 </html>
